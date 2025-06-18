@@ -1,21 +1,21 @@
 @font-face {
     font-family: PoppinsLight;
-    src: url(/fonts/Poppins-Light.ttf);
+    src: url(fonts/Poppins-Light.ttf);
 }
 
 @font-face {
     font-family: PoppinsMed;
-    src: url(/fonts/Poppins-Medium.ttf);
+    src: url(fonts/Poppins-Medium.ttf);
 }
 
 @font-face {
     font-family: PoppinsSemi;
-    src: url(/fonts/Poppins-SemiBold.ttf);
+    src: url(fonts/Poppins-SemiBold.ttf);
 }
 
 @font-face {
     font-family: PoppinsBold;
-    src: url(/fonts/Poppins-ExtraBold.ttf);
+    src: url(fonts/Poppins-ExtraBold.ttf);
 }
 
 * {
