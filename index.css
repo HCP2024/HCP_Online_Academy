@@ -117,6 +117,12 @@ header .main.active {
     max-height: 500px;
 }
 
+header .main.active {
+    max-height: 500px; /* Or whatever height you need */
+    overflow: visible;
+}
+
+
 header#academy-header .upper .left, header#academy-header .upper .right {
     display: flex;
     flex-direction: row;
