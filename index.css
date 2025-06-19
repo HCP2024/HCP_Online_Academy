@@ -112,7 +112,7 @@ header .main .upper {
     align-items: center;
 }
 
-header .main .active {
+header .main.active {
     box-shadow: 0 0 10px rgba(104, 104, 104, 0.1), 4px 2px 12px rgba(249, 249, 255, 0.2);
     max-height: 500px;
 }
