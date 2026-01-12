@@ -35,3 +35,28 @@ header.addEventListener('mouseleave', () => {
         handleHeader();
     }
 });
+
+// POPUP LOGIC
+document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("popup-overlay");
+    const closeBtn = document.querySelector(".popup-close");
+
+    // Show popup automatically after page load
+    setTimeout(() => {
+        popup.classList.add("active");
+    }, 500);
+
+    // Close popup
+    closeBtn.addEventListener("click", () => {
+        popup.classList.remove("active");
+    });
+
+    // Optional: close popup when clicking outside
+    popup.addEventListener("click", (e) => {
+        if (e.target === popup) {
+            popup.classList.remove("active");
+        }
+    });
+});
+
+
