@@ -77,7 +77,6 @@ header#academy-header {
     position: absolute;
     top: 0;
     padding-top: 20px;
-    z-index: 99999;
     pointer-events: none;
 }
 
@@ -840,4 +839,5 @@ div.popup-box div.pop-content div.pop-button a.popup-social {
     cursor: pointer;
     color: #fff;
 }
+
 
