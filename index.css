@@ -741,3 +741,103 @@ footer .flex div.footer-tab {
     color: rgb(50, 50, 50);
     word-break: break-all;
 }
+
+/* ===== POPUP STYLES ===== */
+#popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+#popup-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popup-box {
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 14px;
+    text-align: center;
+    position: relative;
+    animation: popupScale 0.4s ease;
+}
+
+@keyframes popupScale {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.popup-box .pop-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popup-box .pop-content .pop-image {
+  position: relative;
+}
+.popup-box .pop-content .pop-image img {
+  width: 100%;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 43px;
+}
+
+/* Circular button*/
+div.popup-box div.pop-content div.pop-button a.popup-social {
+  text-decoration: none;
+  /* transition: transform 0.3s, background 0.3s;*/
+  border-radius: 4px;
+}
+
+
+.popup-box .pop-content .pop-button a.popup-social i.fa-brands {
+  color: #fff;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+}
+
+.popup-box .pop-content .pop-button a.popup-social i.fa-brands:hover{
+  background: rgba(11, 71, 231, 0.7);
+}
+
+/* .popup-circle-btn:hover {
+    background: #000;
+    transform: scale(1.08);
+} */
+
+/* Close button */
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: -70px;
+    font-size: 50px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #fff;
+}
+
